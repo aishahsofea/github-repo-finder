@@ -28,7 +28,12 @@ Run `yarn install` to install dependencies. This might take a few minutes.
 Run `yarn start` to open [http://localhost:3000](http://localhost:3000) in a browser.\
 Now that the UI is displayed, you can start searching for any topics.
 
-## Unit testing
+## Snapshot testing
 
 Run `yarn test` and all the test suites will be run in the interactive watch mode.\
+Snapshot testing is implemented to check for changes when rendering the UI.\
 Enter `q` to exit the interactive mode. Other options are also specified.
+
+## Report
+
+Notice that a link enclosed in a button is displayed after a search is completed. You can click on the link to download a CSV file that contains information of all the searches done. Note that refreshing the page will also refresh the CSV file. 
