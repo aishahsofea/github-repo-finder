@@ -1,13 +1,13 @@
 import React from "react";
-import { LanguageDropdown } from "../LanguageDropdown";
+import { ResultViewer } from "../ResultViewer";
 import { shallow, configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
 configure({ adapter: new Adapter() });
 
-describe("<LanguageDropdown />", () => {
+describe("<ResultViewer />", () => {
   it("must render correctly", () => {
-    const wrapper = shallow(<LanguageDropdown />);
+    const wrapper = shallow(<ResultViewer />);
     expect(wrapper).toMatchSnapshot();
   });
 });

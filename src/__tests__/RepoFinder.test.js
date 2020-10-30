@@ -1,13 +1,13 @@
 import React from "react";
-import { LanguageDropdown } from "../LanguageDropdown";
+import { RepoFinder } from "../RepoFinder";
 import { shallow, configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
 configure({ adapter: new Adapter() });
 
-describe("<LanguageDropdown />", () => {
+describe("<RepoFinder />", () => {
   it("must render correctly", () => {
-    const wrapper = shallow(<LanguageDropdown />);
+    const wrapper = shallow(<RepoFinder />);
     expect(wrapper).toMatchSnapshot();
   });
 });

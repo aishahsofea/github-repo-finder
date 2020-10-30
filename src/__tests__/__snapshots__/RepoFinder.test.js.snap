@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LanguageDropdown /> must render correctly 1`] = `ShallowWrapper {}`;
+
+exports[`<RepoFinder /> must render correctly 1`] = `ShallowWrapper {}`;

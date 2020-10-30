@@ -43,7 +43,9 @@ export class LanguageDropdown extends React.Component {
         >
           <MenuItem value={null}>{null}</MenuItem>
           {languages.map((lang) => (
-            <MenuItem value={lang}>{lang}</MenuItem>
+            <MenuItem value={lang} key={lang}>
+              {lang}
+            </MenuItem>
           ))}
         </Select>
       </FormControl>

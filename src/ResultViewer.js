@@ -14,7 +14,7 @@ export class ResultViewer extends React.Component {
     return (
       <Paper elevation={3}>
         <List>
-          {results.map((result) => (
+          {results && results.map((result) => (
             <ListItem
               button
               component="a"
