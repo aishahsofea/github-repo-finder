@@ -1,18 +1,33 @@
-# Getting Started with Create React App
+# Github Repo Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project provides a simple web UI that allows you to search for repositories on GitHub. You simply need to type in the keyword of the topic you are interested in and upon clicking the search button, you will be presented with relevant repositories. You only want to search for repos that are written in a certain programming language? Fret not, this UI is also equipped with a selection of programming languages you can choose from! On top of that, you can import all the searches done in a session by also a click of a button!
 
-## Available Scripts
+## What do you need to get started?
 
-In the project directory, you can run:
+### 1. Install package manager
 
-### `yarn start`
+Install the following:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Node 14.9
+* Yarn 1.13
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+\* Note that the latest version might also work
+
+### 2. Clone the project repo
+
+1. Go to your local directory of your choice and open a terminal. (I used Gitbash)
+2. Run `git clone https://github.com/aishahsofea/YOUR-REPOSITORY`
+3. Go into the folder: `cd YOUR-REPOSITORY`
+
+### 3. Install node dependencies 
+
+Run `yarn install` to install dependencies. This might take a few minutes.
+
+
+### 4. Run app in the development mode
+
+Run `yarn start` to open [http://localhost:3000](http://localhost:3000) in a browser.\
+Now that the UI is displayed, you can start searching for any topics.
 
 ### `yarn test`
 
