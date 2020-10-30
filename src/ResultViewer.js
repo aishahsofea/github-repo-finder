@@ -14,22 +14,23 @@ export class ResultViewer extends React.Component {
     return (
       <Paper elevation={3}>
         <List>
-          {results && results.map((result) => (
-            <ListItem
-              button
-              component="a"
-              key={result.id}
-              href={result.html_url}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <ListItemText
-                primary={result.name}
-                secondary={result.description}
-              />
-              <br />
-            </ListItem>
-          ))}
+          {results &&
+            results.map((result) => (
+              <ListItem
+                button
+                component="a"
+                key={result.id}
+                href={result.html_url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ListItemText
+                  primary={result.name}
+                  secondary={result.description}
+                />
+                <br />
+              </ListItem>
+            ))}
         </List>
       </Paper>
     );
