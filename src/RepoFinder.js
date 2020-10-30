@@ -45,6 +45,10 @@ export class RepoFinder extends React.Component {
     })
       .then((response) => response.json())
       .then((data) => {
+        if (data.total_count === 0) {
+          alert("Sorry, no results found!");
+        }
+
         let joinedData = [...this.state.data];
         data.items.map((item) => {
           const newData = {
@@ -95,6 +99,7 @@ export class RepoFinder extends React.Component {
 
   render() {
     const { data, results, page, total_count, language } = this.state;
+
     return (
       <div>
         <TextField
@@ -107,11 +112,18 @@ export class RepoFinder extends React.Component {
           handleLanguage={this.handleLanguage}
           language={language}
         />
-        <Button variant="contained" onClick={() => this.handleClick()}>
+        <Button
+          style={{ height: "50px", marginRight: "10px" }}
+          variant="contained"
+          onClick={() => this.handleClick()}
+        >
           <SearchIcon />
         </Button>
         {results && results.length > 0 && (
-          <Button variant="contained">
+          <Button
+            style={{ height: "50px", marginRight: "10px" }}
+            variant="contained"
+          >
             <AsyncCSV data={data} />
             <SaveAltIcon />
           </Button>
@@ -120,6 +132,7 @@ export class RepoFinder extends React.Component {
         {results && results.length > 0 && <ResultViewer results={results} />}
         {results && results.length > 0 && (
           <Pagination
+            style={{ display: "inline-block", verticalAlign: "middle" }}
             count={total_count >= 300 ? 10 : Math.ceil(total_count / 30)}
             page={page}
             onChange={(event, newPage) => this.handleChangePage(event, newPage)}

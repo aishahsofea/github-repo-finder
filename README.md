@@ -1,6 +1,6 @@
 # Github Repo Finder
 
-This project provides a simple web UI that allows you to search for repositories on GitHub. You simply need to type in the keyword of the topic you are interested in and upon clicking the search button, you will be presented with relevant repositories. You only want to search for repos that are written in a certain programming language? Fret not, this UI is also equipped with a selection of programming languages you can choose from! On top of that, you can import all the searches done in a session by also a click of a button!
+This project provides a simple web UI that allows you to search for repositories on GitHub. You simply need to type in the topic you are interested in and upon clicking the search button, you will be presented with relevant repositories. You only want to search for repos that are written in a certain programming language? Fret not, this UI is also equipped with a selection of programming languages you can choose from! On top of that, you can import all the searches done in a session by also a click of a button!
 
 ## What do you need to get started?
 

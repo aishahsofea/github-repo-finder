@@ -12,7 +12,13 @@ export class ResultViewer extends React.Component {
   render() {
     const { results } = this.props;
     return (
-      <Paper elevation={3}>
+      <Paper
+        style={{
+          margin: "30px",
+          maxWidth: "80vw",
+        }}
+        elevation={3}
+      >
         <List>
           {results &&
             results.map((result) => (

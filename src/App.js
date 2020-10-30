@@ -1,8 +1,9 @@
 import React from "react";
 import { RepoFinder } from "./RepoFinder";
 import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 
-export default class App extends React.Component {
+export class App extends React.Component {
   render() {
     return (
       <div className="App" style={{ textAlign: "center" }}>
@@ -10,9 +11,9 @@ export default class App extends React.Component {
         <Typography variant="h6">
           Search for any topics you are interested in
         </Typography>
-        <div>
+        <Grid container alignItems="center" justify="center">
           <RepoFinder />
-        </div>
+        </Grid>
       </div>
     );
   }
