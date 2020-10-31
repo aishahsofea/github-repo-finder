@@ -6,10 +6,15 @@ This project provides a simple web UI that allows you to search for repositories
 
 ### 1. Install package manager
 
-Install the following:
+**[Node.js 14.9](https://nodejs.org/download/release/v14.9.0/)**
 
-- Node 14.9
-- Yarn 1.13
+- Download the MSI package
+- Follow the installation guide
+- Check if Node is correctly installed by running `node --version` in a terminal
+
+**Yarn 1.13**
+- Use npm to install yarn; `npm i yarn@1.13.0 -g` 
+- Check if Yarn is correctly installed; `yarn --version`
 
 \* Note that the latest version might also work
 
@@ -36,4 +41,4 @@ Enter `q` to exit the interactive mode. Other options are also specified.
 
 ## Report
 
-Notice that a link enclosed in a button is displayed after a search is completed. You can click on the link to download a CSV file that contains information of all the searches done. Note that refreshing the page will also refresh the CSV file. 
+Notice that a link enclosed in a button is displayed after a search is completed. You can click on the link to download a CSV file that contains information of all the searches done. Note that refreshing the page will also refresh the CSV file.
